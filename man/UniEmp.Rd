@@ -9,7 +9,7 @@ UniEmp(X, dist = "Gringorten")
 \arguments{
 \item{X}{The vector of a monthly hydro-climatic variable of n years.}
 
-\item{dist}{is the funciton for the plotting position formula (Gringorten or Weibull).}
+\item{dist}{is the function for the plotting position formula (Gringorten or Weibull).}
 }
 \value{
 The univariate EMP
@@ -18,6 +18,6 @@ The univariate EMP
 Compute the univariate empirical joint probability (EMP)
 }
 \examples{
-X=runif(120, min = 0, max = 100)
+X=runif(20, min = 0, max = 100) # 20 monthly values of precipitation (e.g., August)
 fit<-UniEmp(X,dist = "Gringorten") 
 }

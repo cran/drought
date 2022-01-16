@@ -11,10 +11,10 @@ SDI(X, ts = 6, dist = "EmpGrin")
 
 \item{ts}{is the accumulated time scale.}
 
-\item{dist}{is distribution funciton.}
+\item{dist}{is a distribution function.The inputs can be "EmpGrin","EmpWeib","Gamma","Lognormal".}
 }
 \value{
-The univariate and multivariate drought index of different time scale from both the empirical and gamma distribution
+The (univariate) standardized  drought index of different time scales from both the empirical and parametric distribution
 }
 \description{
 Based on the vector of monthly variables, the standardized drought 
@@ -26,7 +26,7 @@ It also represents other drought indices computed in the similar way as SPI.
 Apart from the standardized drought index, the percentile (probability) is also provided,
 }
 \examples{
-X=runif(120, min = 0, max = 100)
+X=runif(120, min = 0, max = 100) # 10-year monthly data
 fit<-SDI(X,ts=3) # Compute the 3 month drought index
 fit$SDI # Get the empirical drought index 
 z=matrix(t(fit$SDI),ncol=1)

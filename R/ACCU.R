@@ -5,7 +5,7 @@
 #' @param ts  The accumulated time scale  
 #' @export
 #' @examples
-#' X=runif(120, min = 0, max = 100)
+#' X=runif(120, min = 0, max = 100) # 10-year monthly data
 #' Y<-ACCU(X,ts=3) # Compute the 3 month  accumulated series
 
 ACCU<-function (X,ts=6) 

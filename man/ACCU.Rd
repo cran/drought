@@ -15,6 +15,6 @@ ACCU(X, ts = 6)
 Obtain the accumulation of monthly hydro-climatic variables
 }
 \examples{
-X=runif(120, min = 0, max = 100)
+X=runif(120, min = 0, max = 100) # 10-year monthly data
 Y<-ACCU(X,ts=3) # Compute the 3 month  accumulated series
 }

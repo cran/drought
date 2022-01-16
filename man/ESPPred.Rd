@@ -13,18 +13,18 @@ ESPPred(X, Y, L = 1, m = 7, ts = 6)
 
 \item{L}{is the lead time.}
 
-\item{m}{is the monthly variables.}
+\item{m}{is the start time of prediction (or ending of observations)}
 
-\item{ts}{is the monthly variables.}
+\item{ts}{is the time scale of monthly variables.}
 }
 \value{
-The prediction of univariate and multivariate drought index
+The prediction of univariate and multivariate drought index based on ESP
 }
 \description{
 Drought prediction with ESP method
 }
 \examples{
-X=runif(120, min = 0, max = 100)
+X=runif(120, min = 0, max = 100) # 10-year monthly data
 Y=runif(120, min = 0, max = 100)
 ESPPred(X,Y,L=1,m=7,ts=6)
 }

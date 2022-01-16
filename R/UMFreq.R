@@ -1,12 +1,12 @@
-#' Univariate and multivariate return period (Gumbel copula)
-#' @param X are the drought properties or indices
-#' @param Y are the drought properties or indices
-#' @param EL is the average reocurrence time
+#' Univariate and multivariate return period 
+#' @param X is the drought properties (e.g., duration) or indices (e.g., SPI)
+#' @param Y is the drought properties (e.g., duration) or indices (e.g., SRI)
+#' @param EL is the average recurrence time
 #' @return The univariate and multivariate return period
 #' @export
 #' @examples
-#' X=runif(120, min = 0, max = 100)
-#' Y=runif(120, min = 0, max = 100)
+#' X=runif(60, min = 0, max = 100) # 60 drought duration values or index values
+#' Y=runif(60, min = 0, max = 100)  
 #' fit<-UMFreq(X,Y,1)  
 UMFreq<-function (X,Y,EL=1) 
 {

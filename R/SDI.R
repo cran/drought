@@ -9,11 +9,11 @@
 #' 
 #' @param X The vector of a monthly hydro-climatic variable of n years. 
 #' @param ts is the accumulated time scale.
-#' @param dist is distribution funciton.
-#' @return The univariate and multivariate drought index of different time scale from both the empirical and gamma distribution
+#' @param dist is a distribution function.The inputs can be "EmpGrin","EmpWeib","Gamma","Lognormal".
+#' @return The (univariate) standardized  drought index of different time scales from both the empirical and parametric distribution
 #' @export
 #' @examples
-#' X=runif(120, min = 0, max = 100)
+#' X=runif(120, min = 0, max = 100) # 10-year monthly data
 #' fit<-SDI(X,ts=3) # Compute the 3 month drought index
 #' fit$SDI # Get the empirical drought index 
 #'z=matrix(t(fit$SDI),ncol=1)
@@ -31,7 +31,7 @@ SDI<-function (X,ts=6,dist="EmpGrin")
   
   if (dist!= "EmpGrin" & dist!= "EmpWeib" &dist != "Gamma"& dist != "Lognormal") 
   {
-    stop("Only the empirical and gamma distributions are included for the current version! 
+    stop("Only the empirical and gamma/lognormal distributions are included for the current version! 
          Other distribution form  will be updated soon.
          Please select EmpGrin/EmpWeib/Gamma/Lognormal")
   }

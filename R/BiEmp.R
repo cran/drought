@@ -1,11 +1,11 @@
 #' Compute the bivariate empirical joint probability
-#' @param X The vector of a monthly hydro-climatic variable of n years.
-#' @param Y The vector of a monthly hydro-climatic variable of n years.  
-#' @return The empirical joint probability time scale 
+#' @param X The vector of a monthly hydro-climatic variable of n years(e.g., August).
+#' @param Y The vector of a monthly hydro-climatic variable of n years(e.g., August).  
+#' @return The empirical joint probability of X and Y for a specific month (Gringorten plotting position)
 #' @export
 #' @examples
-#' X=runif(120, min = 0, max = 100)
-#' Y=runif(120, min = 0, max = 100)
+#' X=runif(20, min = 0, max = 100) # 20 monthly values (e.g., August)
+#' Y=runif(20, min = 0, max = 100)
 #' fit<-BiEmp(X,Y) 
 
 

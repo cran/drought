@@ -2,12 +2,12 @@
 #' @param X is the monthly variables.
 #' @param Y is the monthly variables.
 #' @param L is the lead time. 
-#' @param m is the monthly variables. 
-#' @param ts is the monthly variables.
-#' @return The prediction of univariate and multivariate drought index
+#' @param m is the start time of prediction (or ending of observations)
+#' @param ts is the time scale of monthly variables.
+#' @return The prediction of univariate and multivariate drought index based on ESP
 #' @export
 #' @examples
-#' X=runif(120, min = 0, max = 100)
+#' X=runif(120, min = 0, max = 100) # 10-year monthly data
 #' Y=runif(120, min = 0, max = 100)
 #'ESPPred(X,Y,L=1,m=7,ts=6)
 

@@ -2,25 +2,25 @@
 % Please edit documentation in R/UMFreq.R
 \name{UMFreq}
 \alias{UMFreq}
-\title{Univariate and multivariate return period (Gumbel copula)}
+\title{Univariate and multivariate return period}
 \usage{
 UMFreq(X, Y, EL = 1)
 }
 \arguments{
-\item{X}{are the drought properties or indices}
+\item{X}{is the drought properties (e.g., duration) or indices (e.g., SPI)}
 
-\item{Y}{are the drought properties or indices}
+\item{Y}{is the drought properties (e.g., duration) or indices (e.g., SRI)}
 
-\item{EL}{is the average reocurrence time}
+\item{EL}{is the average recurrence time}
 }
 \value{
 The univariate and multivariate return period
 }
 \description{
-Univariate and multivariate return period (Gumbel copula)
+Univariate and multivariate return period
 }
 \examples{
-X=runif(120, min = 0, max = 100)
-Y=runif(120, min = 0, max = 100)
+X=runif(60, min = 0, max = 100) # 60 drought duration values or index values
+Y=runif(60, min = 0, max = 100)  
 fit<-UMFreq(X,Y,1)  
 }
