@@ -36,4 +36,5 @@ PropagationMCC(X, Y, acc, lim)
 }
 \references{
 Xu, Y. et al (2019). Propagation from meteorological drought to hydrological drought under the impact of human activities: A case study in northern China. J. Hydrol. 579, 124147.
+Zhang Y., Hao Z., Feng S., et al. (2021). Agricultural drought prediction in China based on drought propagation and large-scale drivers. Agr. Water Manage., 255: 107028. 
 }

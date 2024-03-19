@@ -3,7 +3,8 @@
 #' The input data is monthly drought indices.
 #' Duration is defined as the length of consecutive time series 
 #' when drought index is below the threshold value (e.g., -1). 
-#' Severity is defined as the summation of drought index below the threshold.
+#' Severity is defined as the summation of drought index below the threshold (also termed magnitude in certain studies).
+#' Note that drought intensity can be computed accordingly based on the severity and duration.
 #' This analysis based on run theory is also referred to as threshold level method.
 #' Here the standardized drought index (SDI) is used as 
 #' the example to compute the drought characteristics. 
